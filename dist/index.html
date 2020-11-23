@@ -12,7 +12,7 @@
         <div class="header">
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-8">
                 <div class="header__logo">
                     <img src="img/logo1.png" alt="logo" id="logo">
                     <div class="header__logo__title">
@@ -20,22 +20,54 @@
                     </div>
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-xl-7 col-lg-5 col-md-7 d-md-flex d-none">
                 <div class="header__nav">
                         <a href='javascript:void(0)'class="header__nav__item">о нас</a>
                         <a href='javascript:void(0)'class="header__nav__item">услуги</a>
                         <a href='javascript:void(0)'class="header__nav__item">акции</a>
-                        <a href='javascript:void(0)'class="header__nav__item">галерея</a>
+                        <!-- <a href='javascript:void(0)'class="header__nav__item">галерея</a> -->
                         <a href='javascript:void(0)'class="header__nav__item">контакты</a>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-xl-2 col-lg-3 d-lg-flex d-none">
                 <div class="header__tel">
                     <div class="header__tel__icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <a href="tel:+38(093)2122233" class="header__tel__link">+38(093)21-22-233</a>
                 </div>
+            </div>
+            <div class="col-4  d-flex d-md-none">
+                <nav class="mobile-menu">
+                    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                    <label for="checkbox" class="mobile-menu__btn">
+                        <div class="mobile-menu__icon"></div></label>
+                    <div class="mobile-menu__container">
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">HOME</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#services" class="mobile-menu__link">SERVICES</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#about" class="mobile-menu__link">ABOUT</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#works" class="mobile-menu__link">WORKS</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#blog" class="mobile-menu__link">BLOG</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#client" class="mobile-menu__link">CLIENTS</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#contact" class="mobile-menu__link">CONTACT</a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
@@ -110,7 +142,7 @@
         </div>
     </div>
 </div>
-        <div class="service">
+        <!-- <div class="service">
     <div class="service__title">
         <h2>наши услуги</h2>
     </div>
@@ -145,8 +177,65 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
+        <div class="discount">
+    <div class="img-slider swiper-container">
+        <div class="img-slider__wrapper swiper-wrapper">
+            <div class="img-slider__slide swiper-slide" data-hash="slide-1">
+                <div class="img-slider__image">
+                    <div>DISCOUNT 1</div>
+                </div>
+            </div>
+            <div class="img-slider__slide swiper-slide" data-hash="slide-2">
+                <div class="img-slider__image">
+                    <div>DISCOUNT 2</div>
+                </div>
+            </div>
+            <div class="img-slider__slide swiper-slide" data-hash="slide-3">
+                <div class="img-slider__image">
+                    <div>DISCOUNT 3</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigation -->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- pagination -->
+
+        <div class="swiper-pagination"></div>
+
+        <!-- scrollbar -->
+
+        <div class="swiper-scrollbar"></div>
+    </div>
+</div>
+        <div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="contact__adress">
+                    <h3 class="contact__adress__title">Я нахожусь:</h3>
+                    <p class="contact__adress__info">
+                        г.Николаев, ул.Соборная 1
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <a class="glitch-btn" href="javascript:void(0)">
+                    <div class="text">ABOUT ME</div>
+                    <div class="mask">
+                      <span>ABOUT ME</span>
+                      </div>
+                   </div></a>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
