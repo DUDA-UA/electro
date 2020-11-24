@@ -3500,7 +3500,7 @@ table {
 .mobile-menu__icon {
   display: block;
   position: relative;
-  background: #A4A4A4;
+  background: #e4a100;
   width: 90%;
   height: 4px;
   -webkit-transition: .4s;
@@ -3511,7 +3511,7 @@ table {
   content: "";
   display: block;
   position: absolute;
-  background: #A4A4A4;
+  background: #e4a100;
   width: 100%;
   height: 4px;
   -webkit-transition: .4s;
@@ -3559,7 +3559,7 @@ table {
 
 .mobile-menu__item {
   font-size: 26px;
-  padding-bottom: 20px; }
+  padding-bottom: 40px; }
 
 .mobile-menu__link {
   text-decoration: none;
@@ -3714,19 +3714,42 @@ table {
     .service__card__img {
       max-width: 350px;
       width: 100%;
-      height: 200px;
-      background-color: #C70039; }
-    .service__card__body__title {
-      padding: 15px 0px;
+      overflow: hidden;
+      margin: 0 auto; }
+      .service__card__img img {
+        max-width: 350px;
+        width: 100%;
+        height: 300px;
+        border-radius: 20px; }
+    .service__card__body {
       text-align: center;
-      width: 100%;
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #ffffff; }
+      color: #C70039; }
+      .service__card__body__title {
+        padding: 15px 0px;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #ffffff; }
+      .service__card__body__text {
+        text-align: center; }
+    @media screen and (max-width: 767px) {
+      .service__card {
+        margin: 20px auto; } }
 
 .card-img-top {
   max-width: 350px;
   width: 100%; }
+
+.text-thirdCard {
+  padding-top: 15px;
+  line-height: 30px; }
+
+#firstCard {
+  margin-bottom: 25px; }
+  @media screen and (max-width: 767px) {
+    #firstCard {
+      margin-bottom: 10px; } }
 
 .discount {
   width: 100%; }
