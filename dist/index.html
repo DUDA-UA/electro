@@ -125,11 +125,11 @@
             <div class="col-lg-7 col-md-12">
                 <div class="about__content">
                     <p class="about__content__text">
-                        Я- Юлия Самолюк, Мастер электроэпиляции с высшим медицинским образованием, который избавит Вас от нежелательных волос НАВСЕГДА.</p>
+                        Я - Юлия Самолюк, мастер электроэпиляции с высшим медицинским образованием, который избавит Вас от нежелательных волос НАВСЕГДА.</p>
                     <p class="about__content__text">
                         Моя философия: <span class="about__content__text__tagline">"СОВЕРШЕНСТВО В ДЕЙСТВИИ"</span>. Помогаю Вам стать совершенством без кардинальных изменений.</p>
                     <p class="about__content__text"> 
-                        Мой главный приоритет - ВЫСОКОЕ качество предоставленных Вам услуг, которые заключаются в следующем:
+                        Мой главный приоритет - ВЫСОКОЕ качество предоставленных Вам услуг, поэтому:
                     </p>
                     <ul class="about__content__list">
                         <li>-  Узкая специализация - только удаление волос;</li>
@@ -148,7 +148,7 @@
 </div>
         <div class="service">
     <div class="service__title">
-        <h3>наши цены</h3>
+        <h3>прайс</h3>
     </div>
     <div class="container">
         <div class="row">
@@ -183,7 +183,7 @@
             <div class="col-xl-4 col-md-6 col-12">
                 <div class="service__card">
                     <div class="service__card__img">
-                        <img src="./img/allFor.jpg" alt="body">
+                        <img src="./img/allFor1.jpg" alt="body">
                     </div>
                     <div class="service__card__body">
                         <p class="service__card__body__text text-thirdCard">При работе менее часа оплата фиксированная - 180грн</p>
@@ -194,63 +194,8 @@
     </div>
 </div>
 
-        <div class="discount">
-    <div class="img-slider swiper-container">
-        <div class="img-slider__wrapper swiper-wrapper">
-            <div class="img-slider__slide swiper-slide" data-hash="slide-1">
-                <div class="img-slider__image">
-                    <div>DISCOUNT 1</div>
-                </div>
-            </div>
-            <div class="img-slider__slide swiper-slide" data-hash="slide-2">
-                <div class="img-slider__image">
-                    <div>DISCOUNT 2</div>
-                </div>
-            </div>
-            <div class="img-slider__slide swiper-slide" data-hash="slide-3">
-                <div class="img-slider__image">
-                    <div>DISCOUNT 3</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- navigation -->
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- pagination -->
-
-        <div class="swiper-pagination"></div>
-
-        <!-- scrollbar -->
-
-        <div class="swiper-scrollbar"></div>
-    </div>
-</div>
-        <div class="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="contact__adress">
-                    <h3 class="contact__adress__title">Я нахожусь:</h3>
-                    <p class="contact__adress__info">
-                        г.Николаев, ул.Соборная 1
-                    </p>
-                </div>
-            </div>
-            <div class="col-4">
-                <a class="glitch-btn" href="javascript:void(0)">
-                    <div class="text">ABOUT ME</div>
-                    <div class="mask">
-                      <span>ABOUT ME</span>
-                      </div>
-                   </div></a>
-            </div>
-            <div class="col-4"></div>
-        </div>
-    </div>
-</div>
+        @include '/blocks/_discount/_discount.kit'
+        @include '/blocks/_contact/_contact.kit'
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
