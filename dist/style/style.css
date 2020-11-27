@@ -3615,8 +3615,8 @@ html {
   -ms-flex-align: center;
   align-items: center;
   position: fixed;
-  top: 550px;
-  right: 50px;
+  top: 650px;
+  right: 25px;
   opacity: 0;
   z-index: 40;
   cursor: pointer;
