@@ -3380,6 +3380,9 @@ table {
   text-transform: uppercase;
   font-weight: 900; }
 
+html {
+  scroll-behavior: smooth; }
+
 .box {
   width: 1440px;
   width: 100%;
@@ -3420,7 +3423,8 @@ table {
   width: 100%;
   background-color: #ffffff;
   color: #C70039;
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  height: auto; }
 
 .header__logo {
   -webkit-box-pack: justify;
@@ -3442,7 +3446,7 @@ table {
   justify-content: center;
   text-transform: uppercase; }
   .header__nav__item {
-    margin: 0px 35px; }
+    margin: 0px 11px; }
     @media screen and (max-width: 1199px) {
       .header__nav__item {
         margin: 0px 15px; } }
@@ -3595,6 +3599,33 @@ table {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   background-color: #ffffff; }
+
+.go-top {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 550px;
+  right: 50px;
+  opacity: 0;
+  z-index: 40;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .go-top .fa-arrow-up {
+    color: #000;
+    font-size: 32px; }
 
 .main {
   width: 100%; }
