@@ -3632,6 +3632,10 @@ html {
     color: #000;
     font-size: 32px; }
 
+.tel__link {
+  font-size: 22px;
+  color: #ffffff; }
+
 .main {
   width: 100%; }
 
