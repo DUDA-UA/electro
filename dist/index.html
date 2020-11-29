@@ -22,11 +22,10 @@
             </div>
             <div class="col-xl-6 col-lg-5 col-md-7 d-md-flex d-none">
                 <div class="header__nav">
-                        <a href='javascript:void(0)'class="header__nav__item">кто я</a>
-                        <a href='javascript:void(0)'class="header__nav__item">прайс</a>
-                        <a href='javascript:void(0)'class="header__nav__item">вопросы клиентов</a>
-                        <!-- <a href='javascript:void(0)'class="header__nav__item">галерея</a> -->
-                        <a href='javascript:void(0)'class="header__nav__item">контакты</a>
+                        <a href="#about" class="header__nav__item">кто я</a>
+                        <a href="#price" class="header__nav__item">прайс</a>
+                        <a href="#discount" class="header__nav__item">вопросы клиентов</a>
+                        <a href="#contact" class="header__nav__item">контакты</a>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 d-lg-flex d-none">
@@ -45,16 +44,16 @@
                     <div class="mobile-menu__container">
                     <ul class="mobile-menu__list">
                         <li class="mobile-menu__item">
-                            <a href="#" class="mobile-menu__link">о нас</a>
+                            <a href="#about" class="mobile-menu__link">кто я</a>
                         </li>
                         <li class="mobile-menu__item">
-                            <a href="#services" class="mobile-menu__link">услуги</a>
+                            <a href="#price" class="mobile-menu__link">прайс</a>
                         </li>
                         <li class="mobile-menu__item">
-                            <a href="#about" class="mobile-menu__link">акции</a>
+                            <a href="#discount" class="mobile-menu__link">вопросы клиентов</a>
                         </li>
                         <li class="mobile-menu__item">
-                            <a href="#works" class="mobile-menu__link">контакты</a>
+                            <a href="#contact" class="mobile-menu__link">контакты</a>
                         </li>
                     </ul>
                     </div>
@@ -116,8 +115,8 @@
         <div class="swiper-scrollbar"></div>
     </div>
 </div>
-        <div class="about">
-    <div class="about__title">
+        <div class="about" id="about">
+    <div class="about__title" id="#">
         <h3>кто я</h3>
     </div>
     <div class="container">
@@ -149,7 +148,7 @@
         </div>
     </div>
 </div>
-        <div class="service">
+        <div class="service" id="price">
     <div class="service__title">
         <h3>прайс</h3>
     </div>
@@ -197,7 +196,7 @@
     </div>
 </div>
 
-        <div class="discount">
+        <div class="discount" id="discount">
     <div class="discount__title">Часто задаваемые вопросы</div>
     <div class="question-slider swiper-container">
         <div class="question-slider__wrapper swiper-wrapper">
@@ -454,7 +453,45 @@
         <div class="swiper-scrollbar"></div>
     </div>
 </div>
-        @include '/blocks/_contact/_contact.kit'
+        <div class="footer" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-4 col-md-6 col-12 order-md-1 order-2">
+                <div class="footer__address">
+                    <h3 class="footer__address__title">
+                        контакты
+                    </h3>
+                    <p class="footer__address__info">г.Николаев, Ингульский район, улица Передовая 10</p>
+                    <a href="https://goo.gl/maps/c6F4USyRkL8bVwDf9" class="footer__address__mapLink" target="_blank"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Посмотреть местоположение на карте</a>
+
+                    <div class="footer__social2">
+                        <a href="https://www.instagram.com/electroepil_nikolaev/?hl=ru" target="_blank" class="footer__social2__link">
+                            <i class="fab fa-instagram"></i>
+                            Наша Instagram страничка 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12 order-md-2 order-1">
+                <div class="footer__logo">
+                    <img src="img/logo1.png" alt="logo" id="logo">
+                    <div class="footer__logo__title">
+                        <p class="footer__logo__title-top">Электроэпиляция в Николаеве</p>
+                    </div>
+                    <p class="footer__logo__tagline">совершенство в действии</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 d-lg-flex d-none order-3">
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/electroepil_nikolaev/?hl=ru" target="_blank" class="footer__social__link">
+                        <i class="fab fa-instagram"></i>
+                        Наша Instagram страничка 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
