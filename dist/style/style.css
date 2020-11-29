@@ -3380,6 +3380,11 @@ table {
   text-transform: uppercase;
   font-weight: bolder; }
 
+* {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -3429,7 +3434,8 @@ html {
 .header__logo {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-weight: bold; }
   .header__logo #logo {
     width: 70px;
     margin-right: 15px; }
@@ -3445,21 +3451,38 @@ html {
   -ms-flex-pack: center;
   justify-content: center;
   text-transform: uppercase; }
+  .header__nav__item {
+    margin: 0px 15px;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(left, #ffffff 50%, #C70039 50%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #C70039), color-stop(50%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #C70039 50%, #ffffff 50%);
+    background-image: -o-linear-gradient(left, #C70039 50%, #ffffff 50%);
+    background-image: linear-gradient(to right, #C70039 50%, #ffffff 50%);
+    background-position: 0;
+    background-size: 200%;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    padding: 4px;
+    border-radius: 5px;
+    color: #ffffff; }
+    .header__nav__item:hover {
+      background-position: 100%;
+      color: #C70039; }
+    @media screen and (max-width: 1199px) {
+      .header__nav__item {
+        margin: 0px 8px;
+        font-size: 12px; } }
+    @media screen and (max-width: 991px) {
+      .header__nav__item {
+        margin: 0px 10px;
+        font-size: 14px; } }
   @media screen and (max-width: 991px) {
     .header__nav {
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end; } }
-  .header__nav__item {
-    margin: 0px 20px; }
-    @media screen and (max-width: 1199px) {
-      .header__nav__item {
-        margin: 0px 8px;
-        font-size: 14px; } }
-    @media screen and (max-width: 991px) {
-      .header__nav__item {
-        margin: 0px 10px;
-        font-size: 15px; } }
 
 .header__tel {
   -webkit-box-pack: center;
@@ -3581,7 +3604,7 @@ html {
   text-transform: uppercase; }
 
 .mobile-menu__link:hover, .mobile-menu__link:active {
-  color: #555; }
+  color: #000; }
 
 .mobile-menu__checkbox {
   display: none; }
@@ -3756,7 +3779,18 @@ html {
 .site-link {
   font-size: 32px;
   font-weight: bolder;
-  color: yellow; }
+  color: yellow;
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  transition: .7s; }
+  .site-link:hover .fa-instagram {
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
   @media screen and (max-width: 767px) {
     .site-link {
       font-size: 26px; } }
@@ -3823,9 +3857,21 @@ html {
 
 .about__content__question {
   color: #000;
-  line-height: 30px; }
+  line-height: 30px;
+  text-align: center; }
   .about__content__question .fa-instagram {
-    font-size: 48px; }
+    font-size: 48px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .about__content__question .fa-instagram:hover {
+      background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      -webkit-background-clip: text;
+      /* Also define standard property for compatibility */
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .about__content__question__tel {
     font-size: 24px;
     color: #C70039; }
@@ -4318,6 +4364,17 @@ a {
   .footer__social__link {
     color: #ffffff;
     font-size: 20px; }
+    .footer__social__link:hover .fa-instagram {
+      background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      -webkit-background-clip: text;
+      /* Also define standard property for compatibility */
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-transition: 2s;
+      -o-transition: 2s;
+      transition: 2s; }
     @media screen and (max-width: 1199px) {
       .footer__social__link {
         font-size: 18px; } }
