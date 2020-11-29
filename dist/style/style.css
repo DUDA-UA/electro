@@ -3372,13 +3372,13 @@ table {
   text-align: justify;
   font-size: 22px; }
 
-.about__title, .service__title, .discount__title {
+.main__title h2, .about__title, .service__title, .discount__title {
   width: 100%;
   text-align: center;
   font-size: 42px;
   padding-bottom: 40px;
   text-transform: uppercase;
-  font-weight: 900; }
+  font-weight: bolder; }
 
 html {
   scroll-behavior: smooth; }
@@ -3445,16 +3445,21 @@ html {
   -ms-flex-pack: center;
   justify-content: center;
   text-transform: uppercase; }
+  @media screen and (max-width: 991px) {
+    .header__nav {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; } }
   .header__nav__item {
     margin: 0px 20px; }
     @media screen and (max-width: 1199px) {
       .header__nav__item {
-        margin: 0px 10px;
-        font-size: 13px; } }
-    @media screen and (max-width: 1199px) {
+        margin: 0px 8px;
+        font-size: 14px; } }
+    @media screen and (max-width: 991px) {
       .header__nav__item {
         margin: 0px 10px;
-        font-size: 14px; } }
+        font-size: 15px; } }
 
 .header__tel {
   -webkit-box-pack: center;
@@ -3509,7 +3514,7 @@ html {
 .mobile-menu__icon {
   display: block;
   position: relative;
-  background: #e4a100;
+  background: #000;
   width: 90%;
   height: 4px;
   -webkit-transition: .4s;
@@ -3520,7 +3525,7 @@ html {
   content: "";
   display: block;
   position: absolute;
-  background: #e4a100;
+  background: #000;
   width: 100%;
   height: 4px;
   -webkit-transition: .4s;
@@ -3637,13 +3642,32 @@ html {
   color: #ffffff; }
 
 .main {
-  width: 100%; }
+  width: 100%;
+  padding-top: 30px;
+  background-color: #A4A4A4; }
+  .main__title {
+    width: 100%;
+    text-align: center; }
+    .main__title h2 {
+      color: #C70039; }
+  .main__footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center; }
+    .main__footer p {
+      text-transform: uppercase;
+      font-size: 36px;
+      color: yellow;
+      font-size: bold; }
 
 .image-slider {
   padding: 100px 0px;
   width: 100%;
   height: 100%;
   background-color: #C70039; }
+  @media screen and (max-width: 991px) {
+    .image-slider {
+      padding: 30px 0px 60px 0px; } }
   .image-slider__image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3683,9 +3707,77 @@ html {
     cursor: pointer;
     background-color: #C70039; }
 
+.swiper-slide__sale {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 210px;
+  font-weight: bolder;
+  color: #ffffff;
+  padding-left: 100px; }
+  @media screen and (max-width: 991px) {
+    .swiper-slide__sale {
+      padding-left: 0; } }
+  @media screen and (max-width: 767px) {
+    .swiper-slide__sale {
+      font-size: 140px; } }
+  .swiper-slide__sale p {
+    display: inline-block; }
+
+.swiper-slide__saleInfo {
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 60px;
+  color: #ffffff;
+  padding-left: 60px;
+  text-align: center; }
+  @media screen and (max-width: 991px) {
+    .swiper-slide__saleInfo {
+      padding-left: 0; } }
+  @media screen and (max-width: 767px) {
+    .swiper-slide__saleInfo {
+      line-height: 40px;
+      font-size: 30px; } }
+
+.site-link {
+  font-size: 32px;
+  font-weight: bolder;
+  color: yellow; }
+  @media screen and (max-width: 767px) {
+    .site-link {
+      font-size: 26px; } }
+
 .window-img {
   max-width: 600px;
   width: 100%; }
+
+.sale-title {
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center; }
+  .sale-title .saleForTwo {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffffff;
+    line-height: 60px; }
+    @media screen and (max-width: 767px) {
+      .sale-title .saleForTwo {
+        line-height: 40px;
+        font-size: 30px; } }
 
 .about {
   background-color: #ffffff; }
@@ -4173,7 +4265,7 @@ a {
   .footer__address__tel {
     color: #ffffff;
     font-size: 22px;
-    padding-bottom: 25px; }
+    padding-top: 25px; }
   .footer__address__mapLink {
     font-size: 17px;
     color: #A4A4A4; }
