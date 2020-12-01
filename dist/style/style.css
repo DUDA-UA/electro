@@ -3681,49 +3681,9 @@ html {
       display: -ms-flexbox;
       display: flex;
       position: relative; } }
-  .main-text .img {
-    max-width: 299px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0; }
-    @media screen and (min-width: 769px) {
-      .main-text .img {
-        display: none; } }
-    @media screen and (max-width: 409px) {
-      .main-text .img {
-        display: none; } }
 
 .main-text__content {
-  position: relative;
-  padding: 56px 0px; }
-  @media screen and (max-width: 768px) {
-    .main-text__content {
-      padding: 40px 0px; } }
-  @media screen and (max-width: 525px) {
-    .main-text__content {
-      padding: 42px 0px; } }
-  @media screen and (max-width: 456px) {
-    .main-text__content {
-      padding: 49px 0px; } }
-  @media screen and (max-width: 409px) {
-    .main-text__content {
-      padding: 60px 0px; } }
-  .main-text__content__img {
-    max-width: 337px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0; }
-    @media screen and (max-width: 1200px) {
-      .main-text__content__img {
-        max-width: 325px; } }
-    @media screen and (max-width: 992px) {
-      .main-text__content__img {
-        max-width: 285px; } }
-    @media screen and (max-width: 768px) {
-      .main-text__content__img {
-        display: none; } }
+  padding: 80px 0px; }
   .main-text__content__text {
     font-size: 38px;
     color: #C70039;
@@ -3962,10 +3922,22 @@ html {
     font-weight: bolder;
     color: #ffffff;
     line-height: 60px; }
+    @media screen and (max-width: 1200px) {
+      .sale-title .saleForTwo {
+        line-height: 40px;
+        font-size: 34px; } }
+    @media screen and (max-width: 996px) {
+      .sale-title .saleForTwo {
+        line-height: 38px;
+        font-size: 34px; } }
     @media screen and (max-width: 767px) {
       .sale-title .saleForTwo {
         line-height: 40px;
         font-size: 30px; } }
+    @media screen and (max-width: 374px) {
+      .sale-title .saleForTwo {
+        line-height: 38px;
+        font-size: 28px; } }
 
 .about {
   background-color: #C70039; }
