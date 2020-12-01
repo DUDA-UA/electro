@@ -3670,7 +3670,11 @@ html {
 
 .main-text {
   width: 100%;
-  border-bottom: 3px solid #C70039; }
+  border-bottom: 3px solid #C70039;
+  background: url("../img/main-textHead.png");
+  background-position: right;
+  background-size: 400px;
+  background-repeat: no-repeat; }
   @media screen and (max-width: 768px) {
     .main-text {
       display: -webkit-box;
@@ -3692,8 +3696,7 @@ html {
 
 .main-text__content {
   position: relative;
-  padding: 56px 0px;
-  z-index: 10; }
+  padding: 56px 0px; }
   @media screen and (max-width: 768px) {
     .main-text__content {
       padding: 40px 0px; } }
@@ -3726,8 +3729,7 @@ html {
     color: #C70039;
     text-transform: uppercase;
     max-width: 950px;
-    width: 100%;
-    z-index: 10; }
+    width: 100%; }
     @media screen and (max-width: 1200px) {
       .main-text__content__text {
         font-size: 32px; } }
