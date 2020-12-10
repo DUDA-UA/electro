@@ -3747,9 +3747,11 @@ html {
         color: #000;
         font-family: 'Work Sans', sans-serif; }
         .main-text__content__text .btn a .fa-angle-double-down {
+          font-size: 32px;
+          color: #000;
           margin-top: 10px;
-          -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+          -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
           -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
           -webkit-transform-origin: bottom;
@@ -3811,7 +3813,8 @@ html {
     transform: translateY(0); }
   50% {
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px); }
+    transform: translateY(-10px);
+    color: #C70039; }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
@@ -3822,7 +3825,8 @@ html {
     transform: translateY(0); }
   50% {
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px); }
+    transform: translateY(-10px);
+    color: #C70039; }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
