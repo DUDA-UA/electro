@@ -3925,7 +3925,8 @@ html {
     .swiper-slide__sale {
       font-size: 140px; } }
   .swiper-slide__sale p {
-    display: inline-block; }
+    display: inline-block;
+    letter-spacing: -10px; }
 
 .swiper-slide__saleInfo {
   width: 100%;
